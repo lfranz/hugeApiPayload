@@ -130,20 +130,18 @@ VITE_APP_NAME="${APP_NAME}"
 ```
 I've created an s3 bucket with a small pre-uploaded json file. 
 
-After that we can run the projects running the command 
-
-```docker compose up -d```
-
-inside the app folder.
-
-Then a local environment with app, db and other stuffs, is almost ready to use.
-We need to run the following commands to have a full working environment:
+After that we should run the following commands to have the local environment up and running:
 
 ``` docker-compose run --rm artisan key:generate```
 
 ``` docker-compose run --rm composer install```
 
 ``` docker-compose run --rm artisan migrate``` 
+
+and finally
+
+```docker compose up -d```
+
 
 Now it's possible to run the curl 
 ```
