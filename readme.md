@@ -152,9 +152,8 @@ curl --location 'http://localhost:80/api/hugeApiPayload' \
 to add into the database all the flyers information taken from the json added into the s3 bucket.
 
 ## Note
-I haven't created the lambda function to generate the pre-signed url and the other one that had to be triggered by the new file added into the s3 bucket for 2 reasons:
-1. I'm not too expert of the aws eco-system, I'm studying it but on the architectural side.
-2. I could have copy the lambda functions from internet in python or node.js
+I haven't created the lambda function to generate both the pre-signed url and the other one (that had to be triggered by the new file added into the s3 bucket) since I'm not too expert of the aws eco-system, I'm studying it but on the architectural side.
+Furthermore I found docs on internet in which they use python or node.js only to create lambda function. I never used node.js, I know a bit Python but in the pdf i read that only php and node.js are allowed.
 
 I've represented the flow used to generate a pre-signed url, at that point is missing the lambda function triggered when a new file was added into the s3 bucket that call the api, passing the filename and all the flow is completed.
 
