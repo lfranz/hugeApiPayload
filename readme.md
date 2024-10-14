@@ -46,7 +46,7 @@ Unfortunately is not possible, due to api gateway hard limits, to send request g
 
 Here I've reported a flow to generate pre-signed url and upload file into an s3 bucket:
 ```mermaid
-pre-generated url flow
+sequenceDiagram
     User->>Api gw: Post /upload
     Api gw->>Lambda: call Lambda function
     Lambda-->>Lambda: generate S3 signed url
