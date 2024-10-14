@@ -45,7 +45,7 @@ add all flyers information into the database calling an API using the API Gatewa
 Unfortunately is not possible, due to api gateway hard limits, to send request greater than 10Mb and than the solution is to use a pre-signed url to upload the request as a file in an s3 bucket.
 
 Here I've reported a flow to generate pre-signed url and upload file into an s3 bucket:
-```
+```mermaid
 pre-generated url flow
     User->>Api gw: Post /upload
     Api gw->>Lambda: call Lambda function
@@ -57,7 +57,9 @@ pre-generated url flow
 
 # Usage
 create a .env file into src folder adding th following data:
-NOTE: the AWS_SECRET_ACCESS_KEY has been sent via email
+
+**NOTE: the AWS_SECRET_ACCESS_KEY has been sent via email**
+
 ```
 APP_NAME=Laravel
 APP_ENV=local
