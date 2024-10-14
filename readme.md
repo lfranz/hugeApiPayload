@@ -57,6 +57,7 @@ pre-generated url flow
 
 # Usage
 create a .env file into src folder adding th following data:
+NOTE: the AWS_SECRET_ACCESS_KEY has been sent via email
 ```
 APP_NAME=Laravel
 APP_ENV=local
